@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "TMT Translator",
+    "version": "1.0.0",
+    "description": "Automatically translates webpages using the TMT API",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "contextMenus",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "config.js",
+                "lang.js",
+                "errors.js",
+                "cache.js",
+                "utils.js",
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "TMT Translator"
+    }
+}
