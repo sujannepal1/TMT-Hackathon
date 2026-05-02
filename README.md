@@ -243,7 +243,7 @@ All user-configurable values live in `config.js`. Edit them there — no other f
 
 ## License
 
-Developed for the TMT Hackathon under Kathmandu University / ILPRL. All rights reserved.
+Developed for the TMT Hackathon under Kathmandu University / ILPRL. Open Source MIT License.
 
 ## Video Link
 
